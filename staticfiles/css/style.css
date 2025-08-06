@@ -181,6 +181,7 @@ section {
 .fact-card h3 {
     color: #052b48;
     font-size: 1.29rem;
+    text-align: center;
 }
 .fact-card:hover {
     transform: translateY(-13px) scale(1.047);
