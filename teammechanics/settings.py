@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-please_replace_this_with_a_real_secret_key'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []  # Add your domain in production
+ALLOWED_HOSTS = ['*']  # Add your domain in production
 
 # Application definition
 INSTALLED_APPS = [
