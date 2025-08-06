@@ -1,0 +1,305 @@
+/* Reset & body */
+* {box-sizing: border-box;}
+body {
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    background: #f5f6fa;
+    color: #20303C;
+    transition: background 0.5s, color 0.5s;
+}
+
+header {
+    background: #052b48;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.8em;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4em 0.9em;
+    border-radius: 4px;
+    transition: background 0.25s, color 0.25s;
+}
+
+.nav-links a:hover,
+.brand-link:hover {
+    background: #5BC0EB;
+    color: #fff;
+}
+.brand-link {
+    background: #90caf9;
+    color: #052b48;
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 0.2em 1em;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Toggle Theme Button */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    margin-left: 1em;
+    cursor: pointer;
+    transition: color .3s;
+    color: #ffc700;
+}
+.theme-toggle:hover {
+    color: #39afd5;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #5BC0EB 60%, #fff 100%);
+    padding: 5em 2em 3.5em 2em;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: .3em;
+    color: #052b48;
+}
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.2em;
+}
+.cta-btn,
+.cta-btn-alt {
+    padding: 0.78em 2em;
+    border-radius: 25px;
+    margin: 1em 0.5em 0 0;
+    font-size: 1.15rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(33, 150, 243, 0.10);
+    font-weight: bold;
+    transition: background 0.25s, color 0.2s, transform .18s;
+    display: inline-block;
+}
+.cta-btn {
+    background: #20303C;
+    color: #fff;
+}
+.cta-btn:hover {
+    background: #5BC0EB;
+    color: #fff;
+    transform: scale(1.04) translateY(-2px);
+}
+.cta-btn-alt {
+    background: #fff;
+    color: #20303C;
+    border: 2px solid #20303C;
+}
+.cta-btn-alt:hover {
+    background: #20303C;
+    color: #fff;
+    transform: scale(1.04) translateY(-2px);
+}
+
+section {
+    padding: 3em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About & Founder Note */
+.about blockquote {
+    font-style: italic;
+    color: #0e3a53;
+    margin: 1.5em 0;
+    font-size: 1.19rem;
+    background: #def4ff;
+    padding: 1.1em 1.6em;
+    border-left: 6px solid #5BC0EB;
+    border-radius: 7px 2em 2em 7px;
+}
+.founder-note {
+    background: #fafdff;
+    border-radius: 6px;
+    margin: 2em 0 0 0;
+    padding: 1.3em 1.5em;
+    box-shadow: 0 2px 15px rgba(91,192,235, 0.08);
+}
+.founder-note h4 {
+    font-size: 1.25rem;
+    margin: 0 0 6px 0;
+    color: #0e3a53;
+}
+.founder-note span {
+    font-size: 1.06rem;
+    color: #39afd5;
+}
+
+/* Quick facts cards */
+.quick-facts {
+    text-align: center;
+}
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+    gap: 2em;
+    margin-top: 2.5em;
+}
+.fact-card {
+    background: #eaf4fb;
+    padding: 1.7em 1.1em;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(33, 150, 243, 0.06);
+    transition: transform .22s, box-shadow .22s, background .28s;
+}
+.fact-card h3 {
+    color: #052b48;
+    font-size: 1.29rem;
+    text-align: center;
+}
+.fact-card:hover {
+    transform: translateY(-13px) scale(1.047);
+    box-shadow: 0 10px 28px rgba(33, 150, 243, 0.16);
+    background: #f1f7ff;
+}
+
+/* Footer */
+footer {
+    background: #052b48;
+    color: #fff;
+    text-align: center;
+    padding: 1.0em 0;
+    margin-top: 2em;
+    letter-spacing: 1.1px;
+}
+
+a { transition: color .2s, background .2s; }
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1.1s forwards;
+    animation-delay: .16s;
+}
+@keyframes fadeInUp {
+    80% { opacity: 0.94; }
+    100% { opacity: 1; transform: none; }
+}
+.appear { opacity: 1 !important; transform: none !important; }
+
+/* Dark theme */
+body.dark-mode {
+    background: #1b242b;
+    color: #eaf6fb;
+}
+body.dark-mode header,
+body.dark-mode footer {
+    background: #243954;
+    color: #fff;
+}
+body.dark-mode .logo {color: #eaf6fb;}
+body.dark-mode .nav-links a {
+    color: #bfefff;
+}
+body.dark-mode .nav-links a:hover,
+body.dark-mode .brand-link:hover {
+    background: #2b70a6;
+    color: #fff;
+}
+body.dark-mode .brand-link {
+    background: #054e6c;
+    color: #bfefff;
+}
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #12395b 60%, #243954 100%);
+}
+body.dark-mode .hero-content h1,
+body.dark-mode .fact-card h3 {
+    color: #ffe082;
+}
+body.dark-mode .fact-card {
+    background: #253649;
+    color: #eaf6fb;
+    box-shadow: 0 2px 16px rgba(15,48,87,0.09);
+}
+body.dark-mode .fact-card:hover {
+    background: #28384c;
+}
+body.dark-mode .about blockquote {
+    background: #27384a;
+    color: #aee0fa;
+}
+body.dark-mode .founder-note {
+    background: #232b35;
+    color: #eaf6fb;
+}
+
+/* Responsive Design */
+@media (max-width: 970px) {
+    nav {flex-direction: column;}
+    .nav-links { flex-wrap: wrap; justify-content: center;}
+}
+@media (max-width: 700px) {
+    .logo {display: block; width: 100%; text-align: center;}
+    nav { flex-direction: column;}
+    .nav-links {flex-direction: column; align-items: center;}
+    .nav-links li {margin-left: 0;}
+    .hero-content h1 {font-size: 2rem;}
+    .facts-grid {grid-template-columns: 1fr;}
+    section {padding: 2em 0.5em;}
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: #fafdff;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin-top:1.2em;
+    box-shadow: 0 1px 12px rgba(33, 150, 243, 0.08);
+}
+.contact-form label {
+    font-weight: 500;
+    color: #05334e;
+}
+.contact-form input, .contact-form textarea {
+    border: 1.6px solid #bbcde5;
+    border-radius: 4px;
+    font-size: 1em;
+    padding: 0.6em;
+    background: #f5fafd;
+    color: #20303C;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #5BC0EB;
+    box-shadow: 0 0 6px #90caf996;
+}

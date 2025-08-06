@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero fade-in">
+    <div class="hero-content">
+        <h1>Projects</h1>
+        <p>Student, Government & Industry Collaboration Highlights</p>
+    </div>
+</section>
+
+<section class="fade-in">
+    <h2>Our Recent Projects</h2>
+    <div class="facts-grid">
+        <div class="fact-card">
+            <h3>AI Smart Drone School Program</h3>
+            <p>Partnered with EduBoard, Dehradun, for campus automation using drones</p>
+        </div>
+        <div class="fact-card">
+            <h3>Government Hackathon Winner</h3>
+            <p>Flood-rescue drone demonstrated with District Admin, UP</p>
+        </div>
+        <div class="fact-card">
+            <h3>Custom IoT Lab - Gurugram College</h3>
+            <p>Full IoT robotics environment for student research & learning</p>
+        </div>
+        <div class="fact-card">
+            <h3>Ready-Made Projects</h3>
+            <p>End-to-end builds for college and final-year demos</p>
+        </div>
+    </div>
+    <div style="margin-top:2.5em;text-align:center;">
+        <a href="{% url 'contact' %}" class="cta-btn-alt">Start Your Project</a>
+    </div>
+</section>
+{% endblock %}

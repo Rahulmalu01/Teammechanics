@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero fade-in">
+    <div class="hero-content">
+        <h1>Workshops</h1>
+        <p>Cutting-edge hands-on Drone & Robotics learning events</p>
+    </div>
+</section>
+
+<section class="fade-in">
+    <h2>Upcoming & Past Workshops</h2>
+    <div class="facts-grid">
+        <div class="fact-card">
+            <h3>Drone Basics: Flight & Assembly</h3>
+            <p>For school and college beginners<br><span>Last held: June 2024, Lucknow</span></p>
+        </div>
+        <div class="fact-card">
+            <h3>Robotics Bootcamp</h3>
+            <p>Hands-on experience in robotics, sensors, AI modules<br><span>Upcoming: Aug 2024</span></p>
+        </div>
+        <div class="fact-card">
+            <h3>Custom Campus Events</h3>
+            <p>STEM+Drone workshops for your institution<br><span>Book on request</span></p>
+        </div>
+    </div>
+    <div style="margin-top:2em;text-align:center;">
+        <a href="{% url 'contact' %}" class="cta-btn">Request a Workshop</a>
+    </div>
+</section>
+{% endblock %}

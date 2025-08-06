@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Mechanics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Team Mechanics</div>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'workshops' %}">Workshops</a></li>
+                <li><a href="{% url 'labs' %}">Lab Building</a></li>
+                <li><a href="{% url 'store' %}">Store</a></li>
+                <li><a href="{% url 'projects' %}">Projects</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+            <button id="toggleTheme" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero fade-in">
+            <div class="hero-content">
+                <h1>Welcome to Team Mechanics</h1>
+                <p>Igniting Minds with Drones, Robotics, and Innovation</p>
+                <a href="{% url 'workshops' %}" class="cta-btn">Explore Our Workshops</a>
+                <a href="https://blinkbeyond.netlify.app/" class="cta-btn-alt" target="_blank">Our Beautiful Brand Page</a>
+            </div>
+        </section>
+
+        <section class="about fade-in">
+            <h2>About Us</h2>
+            <p>
+                We conduct hands-on <strong>drone & robotics workshops</strong> across schools and colleges,
+                help institutes build state-of-the-art labs, sell robotics and drone parts at wholesale prices,
+                and manufacture our own unique DIY kits. We also build custom projects for students, collaborate
+                with government and industry, and take pride in building ready-made solutions.
+            </p>
+            <blockquote>
+                “Start where you are. Use what you have. Do what you can.” — Arthur Ashe
+            </blockquote>
+            <div class="founder-note">
+                <h4>From Keshvi Kapoor<br/><span>Co-founder &amp; Manager</span></h4>
+                <p>
+                  Since the inception of Team Mechanics, I’ve had the opportunity to wear multiple hats — not just as a co-founder but as a strategist, designer, and planner. What started as a small team with a shared vision quickly grew into a dynamic platform fueled by collaboration, innovation, and a strong sense of ownership.
+                  <br><br>
+                  From managing our social media presence and designing our brand identity to handling budgets and basic accounting, I’ve been closely involved in shaping both the creative and operational sides of the team. Each campaign and event we executed was backed by thoughtful planning and data-driven decisions.
+                  <br><br>
+                  My background in media and marketing, paired with hands-on experience in project and event management, allowed me to align our strategies with the needs of our audience and team. Whether it was creating compelling visuals, coordinating logistics, or tracking expenses, I ensured every detail contributed to our mission and impact.
+                  <br><br>
+                  Above all, building Team Mechanics has taught me the value of resilience, creative problem-solving, and leading with empathy — skills I carry into every new challenge.
+                </p>
+            </div>
+        </section>
+
+        <section class="quick-facts fade-in">
+            <h2>What We Offer</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <h3>Workshops</h3>
+                    <p>Innovative hands-on drone & robotics sessions</p>
+                </div>
+                <div class="fact-card">
+                    <h3>Lab Setup</h3>
+                    <p>Design & build labs from scratch for institutions</p>
+                </div>
+                <div class="fact-card">
+                    <h3>Wholesale Store</h3>
+                    <p>Get parts, kits, modules at unbeatable prices</p>
+                </div>
+                <div class="fact-card">
+                    <h3>Custom Projects</h3>
+                    <p>Projects for students, companies & government</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Team Mechanics. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

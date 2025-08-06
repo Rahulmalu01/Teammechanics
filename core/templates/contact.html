@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero fade-in">
+    <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>Let's start building something incredible together.</p>
+    </div>
+</section>
+
+<section class="fade-in" style="max-width:500px;margin:auto;">
+    <h2>Get in Touch</h2>
+    <form method="post" class="contact-form">
+        {% csrf_token %}
+        <label for="id_name">Your Name</label>
+        <input type="text" name="name" id="id_name" required>
+        <label for="id_email">Your Email</label>
+        <input type="email" name="email" id="id_email" required>
+        <label for="id_message">Your Message</label>
+        <textarea name="message" id="id_message" rows="5" required></textarea>
+        <button type="submit" class="cta-btn">Send Message</button>
+    </form>
+    <div style="margin-top:2em;">
+        <p>Or email: <a href="mailto:teammechanics@email.com">teammechanics@email.com</a></p>
+        <p>Location: Your City, India</p>
+    </div>
+</section>
+{% endblock %}
